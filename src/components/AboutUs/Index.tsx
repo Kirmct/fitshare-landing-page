@@ -15,11 +15,7 @@ export const AboutUs = () => {
         <div className="about">
           <h1>Quem somos</h1>
           <p>A FitShare é uma plataforma social voltada para a prevenção em saúde através da motivação fitness que combina gamificação, inteligência artificial (IA) e uma comunidade de usuários para incentivar e motivar seus membros a alcançar seus objetivos de saúde e bem-estar.</p>
-            <Button
-                variant='primary-color' 
-                textColor='white' 
-                content='Saiba Mais' 
-                url='/'/>
+           
         </div>
 
 

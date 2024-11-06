@@ -44,8 +44,6 @@ export const Footer = () => {
         </nav>
         <div className="footerLinks">
           <InstagramLogo size={32} color="white" />
-          <FacebookLogo size={32} color="white" />
-          <LinkedinLogo size={32} color="white" />
         </div>
         
       </div>

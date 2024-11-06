@@ -6,11 +6,11 @@ interface PartnersContainerProps {
 
 export const PartnersContainer = styled.section<PartnersContainerProps>`
        
-    .imgTop{
-        background-image: url('${({imgTop}) => imgTop}');
-        height: 30px;
-        background-size: cover;
-    }
+    // .imgTop{
+    //     background-image: url('${({imgTop}) => imgTop}');
+    //     height: 30px;
+    //     background-size: cover;
+    // }
 
     .content{
         display: flex;
@@ -19,7 +19,7 @@ export const PartnersContainer = styled.section<PartnersContainerProps>`
         flex-wrap: wrap;
         align-items: center;
         justify-content: space-around;
-        background-color: ${(props) => props.theme['background-color-cold-light']};
+        // background-color: ${(props) => props.theme['background-color-cold-light']};
         padding: 3rem 2rem;
 
         .contentHeader{

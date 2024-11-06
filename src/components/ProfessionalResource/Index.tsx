@@ -18,11 +18,11 @@ export const ProfessionalResources = () => {
                     <h3>Recursos exclusivos para profissionais de Fitness</h3>
                     <p>A FitShare oferece uma plataforma completa para profissionais monitorarem e motivarem seus clientes de forma eficiente. Controle o progresso, crie desafios e ofereça feedback diretamente através da plataforma</p>
                 
-                    <Button
+                    {/* <Button
                         variant='secondary-color' 
                         textColor='black' 
                         content='Conheça mais' 
-                        url='/'/>
+                        url='/'/> */}
                 </div>
 
                 <div className="contentRight">

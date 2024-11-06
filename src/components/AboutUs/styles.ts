@@ -31,7 +31,7 @@ export const AboutUsContainer = styled.section`
 
             p{
                 max-width: 50ch;
-                font-size: .75rem;
+                font-size: .85rem;
             }
         }
     }

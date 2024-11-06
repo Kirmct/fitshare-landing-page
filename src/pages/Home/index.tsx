@@ -6,6 +6,7 @@ import { ProfessionalResources } from '../../components/ProfessionalResource/Ind
 import { TransformSection } from '../../components/TransformTeam/Index'
 import { Partners } from '../../components/Partners/Index'
 import { DevicesSection } from '../../components/DevicesSection/Index'
+import { TalkToUs } from '../../components/TalkToUsSection'
 
 export const Home = () => {
   return (
@@ -16,6 +17,7 @@ export const Home = () => {
     <Choose/>
     <ProfessionalResources/>
     <TransformSection/>
+    <TalkToUs/>
     <Partners/>
     <DevicesSection/>
     </div>

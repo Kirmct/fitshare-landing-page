@@ -20,6 +20,7 @@ export const FooterContaier = styled.footer`
       display: flex;
       flex-direction: column;
       gap: .75rem;
+      
       li a {
         font-size: 1rem;
         transition: 0.2s;

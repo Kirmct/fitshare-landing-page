@@ -12,39 +12,52 @@ export const HeaderContainer = styled.header`
     max-width: 1200px;
     margin: 0 auto;
 
-    span {
-      color: ${(props) => props.theme['secondary-color']};
-      font-weight: bold;
-      font-size: 2rem;
-      transition: 0.2s;
+    img {
       cursor: pointer;
+      transition: opacity 0.2s;
 
       &:hover {
-        opacity: 0.7;
+        opacity: 0.8;
       }
     }
 
     nav {
       color: ${(props) => props.theme['white']};
+
       ul {
         display: flex;
-        justify-content: space-between;
+        align-items: center;
         list-style: none;
         gap: 2.5rem;
 
-        li a {
-          font-size: 1rem;
-          font-weight: 600;
-          transition: 0.2s;
+        /* Estilos para links e botões */
+        li {
+          a, button {
+            font-size: 1rem;
+            font-weight: 600;
+            color: ${(props) => props.theme['white']};
+            transition: 0.2s;
+            background: none;
+            border: none;
+            cursor: pointer;
+            border-top: 3px solid transparent;
+            border-bottom: 3px solid transparent;
+            padding: 0.5rem;
 
-          border-top: 3px solid transparent;
-          border-bottom: 3px solid transparent;
-
-          &:hover {
-            opacity: 0.8;
+            &:hover {
+              opacity: 0.8;
+            }
           }
 
-          &.active {
+          /* Estilo específico para links ativos */
+          a.active {
+            background-color: ${(props) => props.theme['secondary-color']};
+            padding: 1px 12px;
+            border-radius: 1rem;
+            color: ${(props) => props.theme['tertiary-color']};
+          }
+
+          button.active {
             background-color: ${(props) => props.theme['secondary-color']};
             padding: 1px 12px;
             border-radius: 1rem;
@@ -55,11 +68,13 @@ export const HeaderContainer = styled.header`
     }
   }
 
+  /* Responsividade */
   @media (max-width: 700px) {
     div {
       justify-content: center;
       flex-direction: column;
-      gap:1rem;
+      gap: 1rem;
+
       nav ul {
         gap: 0.875rem;
       }

@@ -24,13 +24,27 @@ export const Header = () => {
         <img src={logo} alt="" onClick={handleLogoClick} />
         <nav>
           <ul>
-            <li><NavLink to="/#" title="Início">Início</NavLink></li>
             <li>
-            <NavLink to="/#" onClick={() => handleScrollToFeatures("funcionalidades")} title="Funcionalidades">
-              Funcionalidades
-            </NavLink>
+              <button onClick={() => handleScrollToFeatures("inicio")} title="Início">
+                Início
+              </button>
             </li>
-            <li><NavLink to="/cadastro" title="Cadastre-se">Cadastre-se</NavLink></li>
+            
+            <li>
+              <button onClick={() => handleScrollToFeatures("funcionalidades")} title="Funcionalidades">
+                Features
+              </button>
+            </li>
+            <li>
+              <NavLink to="https://modohype.com.br/category/originais/fitshare/" title="ModoHype">
+                ModoHype
+              </NavLink>
+            </li>
+            <li>
+              <button onClick={() => handleScrollToFeatures("cadastro")} title="Cadastre-se" className='active'>
+                Cadastro
+              </button>
+            </li>
           </ul>
         </nav>
       </div>
